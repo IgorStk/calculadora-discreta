@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Lógica IVJ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id ="total">
+        <div id = "erro"></div>
+        <div id="calc">
+    <h3>CalculadoraDiscretaSHHHHHH</h3>
+    <textarea name="display" id="display" readonly></textarea>
+    <div id = "buttons-container">
+             <button onclick="digitar('A')" class= "letras">A</button>
+            <button onclick="digitar('B')" class= "letras">B</button>
+            <button onclick="digitar('C')" class= "letras">C</button>
+            <button  onclick="digitar('D')" class= "letras">D</button>
+            <button onclick = "limparTexto()" class= "limpar">C</button>
+            <button onclick = "apagar()" class= "apagar">⌫</button>
+            <button onclick="digitar('E')" class= "letras">E</button>
+            <button onclick="digitar('F')" class= "letras">F</button>
+            <button onclick="digitar('G')" class= "letras">G</button>
+            <button onclick="digitar('H')" class= "letras">H</button>
+            <button onclick="digitParent('(')" class = operadores>(</button>
+            <button onclick="digitParent(')')" class = "operadores">)</button>
+            <button onclick="digitar('I')" class= "letras">I</button>
+            <button onclick="digitar('J')" class= "letras">J</button>
+            <button onclick="digitar('K')" class= "letras">K</button>
+            <button onclick="digitar('L')" class= "letras">L</button>
+            <button onclick="digitOper('→')" class= "operadores">→</button>
+            <button onclick="digitOper('∧')" class= "operadores">∧</button>
+            <button onclick="digitar('M')" class= "letras">M</button>
+            <button onclick="digitar('N')" class= "letras">N</button>
+            <button onclick="digitar('O')" class= "letras">O</button>
+            <button onclick="digitar('P')" class= "letras">P</button>
+            <button onclick="digitOper('↔')" class= "operadores">↔</button>
+            <button onclick="digitOper('∨')" class= "operadores">∨</button>      
+            <button onclick="digitar('Q')" class= "letras">Q</button>
+            <button onclick="digitar('R')" class= "letras">R</button>
+            <button onclick="digitar('S')" class= "letras">S</button>
+            <button onclick="digitar('T')" class= "letras">T</button>
+            <button onclick="digitNeg('~')" class= "operadores">~</button>
+            <button onclick="digitOper('⊻')" class= "operadores">⊻</button>       
+            <button onclick="digitar('U')" class= "letras">U</button>
+            <button onclick="digitar('V')" class= "letras">V</button>
+            <button onclick="digitar('W')" class= "letras">W</button>
+            <button onclick="digitar('X')" class= "letras">X</button>
+            <button onclick="digitarVF('[VERDADEIRO]')" class= "verdadeiro">V</button>
+            <button onclick="mostrarResultado()" id= "resultado">=</button>  
+            <button class= "ghost-button"></button>
+            <button onclick="digitar('Y')" class= "letras">Y</button>
+            <button onclick="digitar('Z')" class= "letras">Z</button>
+            <button class= "ghost-button"></button>
+            <button onclick="digitarVF('[FALSO]')" class= "falso">F</button>
+        </div>
+    </div>
+    <div id = "tabelaVeritati"></div>
+    <div id="tipoExpress"></div>
+    <div id="tabela-container"></div>
+    </div>
+</body>
+</html>
