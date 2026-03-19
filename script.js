@@ -1,7 +1,6 @@
 const textarea = document.getElementById("display")
 resultado.addEventListener("click", mostrarResultado)
 
-let expressao = textarea.value
 let erro = document.getElementById("erro")
 
 //BÁSICO DE UMA CALCULADORA
@@ -250,8 +249,9 @@ function mostrarTabelaHTML(tabela){
 }
 
 function analisarExpressao(tabela){
-
-    let resultados = tabela.map(l => l.Resultado)
+    let resultados = tabela.map(linha => {
+        let array = Object.values(linha);
+        return array[array.length-1]});
 
     let todosVerdadeiros = resultados.every(v => v === true)
     let todosFalsos = resultados.every(v => v === false)
